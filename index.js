@@ -43,3 +43,4 @@ function wagesEarnedOnDate (empRec, date) {
   return hoursWorkedOnDate(empRec, date)*empRec.payPerHour
 }
 
+// just a note to test my git setup
