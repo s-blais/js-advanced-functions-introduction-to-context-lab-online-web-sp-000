@@ -33,10 +33,10 @@ function createTimeOutEvent (empRec, dateStamp) {
 };
 
 function hoursWorkedOnDate (empRec, date) {
-  const timeInByDate = empRec.timeInEvents.find(obj =>
-    obj.date === date).hour;
-  const timeOutByDate = empRec.timeOutEvents.find(obj =>
-    obj.date === date).hour;
+  const timeInByDate = empRec.timeInEvents.find(event =>
+    event.date === date).hour;
+  const timeOutByDate = empRec.timeOutEvents.find(event =>
+    event.date === date).hour;
   return (timeOutByDate-timeInByDate)/100;
 }
 
